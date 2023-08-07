@@ -41,7 +41,7 @@ where the face is located, but sometimes these coordinates are wrong. A way to
 bypass this is by checkinf if the HAAR Cascade algorithm intersects with the
 real coordinates more than 50%; if so, that data proves more useful for the 
 age-prediction portion of the app.
-
+9
 
 
 
