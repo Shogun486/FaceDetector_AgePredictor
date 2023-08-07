@@ -116,7 +116,7 @@ parse through a public dataset containing several thousands of images, filtering
 images that are useful. A little thinking outside the box allowed us to improve the face capture by
 using the IoU concept. Increasing the accuracy rate of a model is highly dependent on the data it reads
 and the attributes used to process that data. In this project, we were able to learn about key machine
-learning concepts and how to build a practial application that can be used as a prototype for retail
+learning concepts and how to build a practical application that can be used as a prototype for retail
 environments and those that serve similar purposes.
 
 
