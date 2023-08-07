@@ -6,7 +6,7 @@ an image and predicts their age group. A practical use of this app would
 be in a retail environment, where cameras can predict customers' ages and 
 derive analytic data for target consumers. 
 
-For testing the application, the publicly available IMDB-WIKI dataset was 
+For testing the application, the publicly available [IMDB-WIKI] dataset was 
 used. All installation procedures to acquire this data is explicitly labeled 
 in the Google Colab notebooks. 
 
@@ -30,7 +30,7 @@ and yield desired results without excessive consumption of resources.
 
 ## Challenges
 
-The WIKI dataset contains 62,328 images, but not all of them are ideal for 
+The [WIKI dataset] contains 62,328 images, but not all of them are ideal for 
 model training. For instance, only a handful of images do not convert to
 grayscale (which is required for the HAAR Cascade algorithm to run). The 
 real age labeled with each image is sometimes negative, and quite often 
@@ -85,7 +85,7 @@ thus there needs to be some manual padding (which can be seen in the code).
 ### Best Practice
 The IoU-cropped images can indeed be used to train the logistic regression classifier, 
 but it is generally advised to isolate experiments. Therefore, it's best to use 
-the WIKI pre-cropped faces dataset available here. Once the age-prediction model 
+the WIKI pre-cropped faces dataset available [here]. Once the age-prediction model 
 is optimized, it's as simple as feeding the IoU-cropped images into the training set.
 
 ## Improving The Model & Comparing Results
@@ -124,6 +124,9 @@ environments and those that serve similar purposes.
 [AgePrediction.ipynb]: https://github.com/Shogun486/FaceDetector_AgePredictor/blob/main/AgePrediction.ipynb
 [Wiki_PreTrainedModel.ipynb]: https://github.com/Shogun486/FaceDetector_AgePredictor/blob/main/Wiki_PreTrainedModel.ipynb
 [CNN_Model.ipynb]: https://github.com/Shogun486/FaceDetector_AgePredictor/blob/main/CNN_Model.ipynb
+[IMDB-WIKI]: https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/
+[here]: https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/static/wiki_crop.tar
+[WIKI dataset]: https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/static/wiki.tar.gz
 
 
 
