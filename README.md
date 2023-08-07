@@ -8,17 +8,17 @@ derive analytic data for target consumers.
 
 For testing the application, the publicly available IMDB-WIKI dataset was 
 used. All installation procedures to acquire this data is explicitly labeled 
-in the Colab notebooks. 
+in the Google Colab notebooks. 
 
 The HAAR Cascade algorithm is used to detect faces, and a logistic regression
 classifier is used as the age-predictive model. SIFT is used to extract key 
-features from each image for training. Additionally, a CNN model has
+features from each image for model training. Additionally, a CNN model has
 been trained to compare its accuracy results with the logistic regression 
 classifier's. 
 
 ## Tools
 
-This app is programmed fully in Python and written in Google Colab. The
+This app is programmed entirely in Python and runs in Google Colab. The
 following tools are utilized:
   * Tensorflow (CNN model)
   * OpenCV (HAAR Cascade and SIFT)
@@ -35,15 +35,15 @@ model training. For instance, only a handful of images do not convert to
 grayscale (which is required for the HAAR Cascade algorithm to run). The 
 real age labeled with each image is sometimes negative, and quite often 
 images appear that do not even contain a person. A couple of filter 
-mechanisms used to acquire "clean" data is by error handling, and checking 
-if a face is detected at all before any proceessing. These guidelines will 
+mechanisms used to acquire "clean" data is by error handling and checking 
+if a face is detected at all before any processing. These guidelines will 
 ensure that most of the data feeding into the model is useful. 
 
-Another useful method to filter out images for age prediction is utilizing the
+Another efficient method to filter out images for age prediction is utilizing the
 IoU score (Intersection over Union). Each image comes with the coordinates of 
 where the face is located, but sometimes these coordinates are wrong. A way to
-bypass this is by checkinf if the HAAR Cascade algorithm intersects with the
-real coordinates more than 50%; if so, that data proves more useful for the 
+bypass this is by checking if the HAAR Cascade algorithm intersects with the
+real coordinates' area more than 50%; if so, that data proves more useful for the 
 age-prediction portion of the app.
 
 ## IoU Crop - Filtering the dataset
@@ -55,7 +55,7 @@ for each one. The average IoU score comes out to be approximately 70%, but
 modifying the attributes of the HAAR Cascade algorithm may yield higher 
 results. Since the WIKI dataset is so diverse, there isn't a hard and fast way 
 to optimize its usage. Rather, experimentation with these attributes is the 
-key to attain great results. 
+key to attaining great results. 
 
 
 ## Age Prediction
@@ -66,14 +66,14 @@ Almost all image processing, especially when dealing with machine learning,
 makes use of classifying/labeling the dataset. Once the dataset has been labeled,
 it can be trained to predict. The training model used in AgePrediction.ipynb is a
 logistic regression classifier, which is a supervised meachine learning approach.
-What this means is that the data can clearly be categorized. In this case, the
+What this means is that the data can clearly be categorized. In our case, the
 data can be separated into 5 age groups: [0 - 20), [20 - 40), [40 - 60), [60 - 80), 
 and [80 - 100].
 
 ### SIFT
 Next, there has to be a way for the model to recognize images and categorize
 them. This is where feature-extraction methods like SIFT come in. SIFT basically 
-gathers key features from each image and keeps track of their true labels. 
+gathers key features from each image. The model will start recognizing patterns. 
 Different people with the same age group tend to have similar features, so SIFT
 is a good place to start. SIFT maps keypoints on every image, along with descriptors
 which spatially describe each keypoint. Many image processing systems utilize a
@@ -107,14 +107,14 @@ was able to reach a 60% accuracy rate on a particular set of images. The accurac
 because many of the pre-cropped images also need just as much filtering as we've done before. But
 upon just supplying the IoU-cropped images, the accuracy rate went up to 70%. This just shows that 
 even the smallest amount of tinkering can make a big difference in your model. Models need to
-see "clean" data in order to fully understand it; a simple IoU crop was able to boost this score
+see "clean" data in order to fully understand it: a simple IoU crop was able to boost this score
 considerably. 
 
-## Conlusion
-All of the parts needed to detect a face and predict its age group are in place. We were able to 
-parse through a public dataset contain several thousands of images, filtering them and only keeping
-images that are useful. A little thinking outside the box allowed us to to improve face-detection by
-using the IoU concept. Increasing the accuracy rate of a model is high dependednt on the data it reads
+## Conclusion
+All of the parts needed to detect a person's face and predict their age group are in place. We were able to 
+parse through a public dataset containing several thousands of images, filtering them and only keeping
+images that are useful. A little thinking outside the box allowed us to improve the face capture by
+using the IoU concept. Increasing the accuracy rate of a model is highly dependent on the data it reads
 and the attributes used to process that data. In this project, we were able to learn about key machine
 learning concepts and how to build a practial application that can be used as a prototype for retail
 environments and those that serve similar purposes.
