@@ -90,7 +90,7 @@ is optimized, it's as simple as feeding the IoU-cropped images into the training
 
 ## Improving The Model & Comparing Results
 
-### Comparing to a Pre-Trained Model (see Wiki_PreTrainedModel.ipynb)
+### Comparing to a Pre-Trained Model (see [Wiki_PreTrainedModel.ipynb])
 The creators of the dataset also have a pretrained model. Upon comparing their model with
 mine on a particular range of images, both reached an accuracy rate of approximately 70%. 
 However, this doesn't mean both models are equally accurate. Theirs is a CNN model, whereas
@@ -98,7 +98,7 @@ mine's is a logistic regression classifier. CNN models are known for better imag
 and indeed their accuracy rate is better on other sets of images. However, this means we
 are on the right track to predicting the correct age group. 
 
-### Creating a CNN Model (see CNN_Model.ipynb)
+### Creating a CNN Model (see [CNN_Model.ipynb])
 Since the creators of the dataset had a CNN model, I thought I should create my own and compare
 results. Again, I trained the images on the pre-cropped dataset they have to see the results
 purely. There are many factors that go into training a CNN model to reach its peak accuracy.
@@ -122,6 +122,10 @@ environments and those that serve similar purposes.
 
 [IoU_Crop.ipynb]: https://github.com/Shogun486/FaceDetecor_AgePredictor/blob/main/IoU_Crop.ipynb
 [AgePrediction.ipynb]: https://github.com/Shogun486/FaceDetecor_AgePredictor/blob/main/AgePrediction.ipynb
+[Wiki_PreTrainedModel.ipynb]: https://github.com/Shogun486/FaceDetecor_AgePredictor/blob/main/Wiki_PreTrainedModel.ipynb
+[CNN_Model.ipynb]: https://github.com/Shogun486/FaceDetecor_AgePredictor/blob/main/CNN_Model.ipynb
+
+
 
 
 
