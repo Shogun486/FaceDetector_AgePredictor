@@ -8,7 +8,7 @@ derive analytic data for target consumers.
 
 For testing the application, the publicly available [IMDB-WIKI] dataset was 
 used. All installation procedures to acquire this data is explicitly labeled 
-in the Google Colab notebooks. 
+in the Google Colab notebooks, along with all relevant implementations. 
 
 The HAAR Cascade algorithm is used to detect faces, and a logistic regression
 classifier is used as the age-predictive model. SIFT is used to extract key 
