@@ -92,7 +92,7 @@ is optimized, it's as simple as feeding the IoU-cropped images into the training
 
 ### Comparing to a Pre-Trained Model (see [Wiki_PreTrainedModel.ipynb])
 The creators of the dataset also have a pretrained model. Upon comparing their model with
-mine on a particular range of images, both reached an accuracy rate of approximately 70%. 
+mine on a particular set of images, both reached an accuracy rate of approximately 70%. 
 However, this doesn't mean both models are equally accurate. Theirs is a CNN model, whereas
 mine's is a logistic regression classifier. CNN models are known for better image processing, 
 and indeed their accuracy rate is better on other sets of images. However, this means we
