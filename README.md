@@ -46,10 +46,10 @@ bypass this is by checking if the HAAR Cascade algorithm intersects with the
 real coordinates' area more than 50%; if so, that data proves more useful for the 
 age-prediction portion of the app.
 
-## IoU Crop - Filtering the dataset (see IoU_Crop.ipynb)
+## IoU Crop - Filtering the dataset (see [IoU_Crop.ipynb])
 
 Filtering out data is the first step before processing any of it. The 
-IoU_Crop.ipynb is a multi-threaded program used to iterate over the entire 
+[IoU_Crop.ipynb] is a multi-threaded program used to iterate over the entire 
 WIKI dataset, parsing out corrupt images while also collecting the IoU score 
 for each one. The average IoU score comes out to be approximately 70%, but 
 modifying the attributes of the HAAR Cascade algorithm may yield higher 
@@ -120,7 +120,7 @@ learning concepts and how to build a practial application that can be used as a 
 environments and those that serve similar purposes.
 
 
-
+[IoU_Crop.ipynb]: https://github.com/Shogun486/FaceDetecor_AgePredictor/blob/main/IoU_Crop.ipynb
 
 
 
