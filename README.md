@@ -120,10 +120,10 @@ learning concepts and how to build a practial application that can be used as a 
 environments and those that serve similar purposes.
 
 
-[IoU_Crop.ipynb]: https://github.com/Shogun486/FaceDetecor_AgePredictor/blob/main/IoU_Crop.ipynb
-[AgePrediction.ipynb]: https://github.com/Shogun486/FaceDetecor_AgePredictor/blob/main/AgePrediction.ipynb
-[Wiki_PreTrainedModel.ipynb]: https://github.com/Shogun486/FaceDetecor_AgePredictor/blob/main/Wiki_PreTrainedModel.ipynb
-[CNN_Model.ipynb]: https://github.com/Shogun486/FaceDetecor_AgePredictor/blob/main/CNN_Model.ipynb
+[IoU_Crop.ipynb]: https://github.com/Shogun486/FaceDetector_AgePredictor/blob/main/IoU_Crop.ipynb
+[AgePrediction.ipynb]: https://github.com/Shogun486/FaceDetector_AgePredictor/blob/main/AgePrediction.ipynb
+[Wiki_PreTrainedModel.ipynb]: https://github.com/Shogun486/FaceDetector_AgePredictor/blob/main/Wiki_PreTrainedModel.ipynb
+[CNN_Model.ipynb]: https://github.com/Shogun486/FaceDetector_AgePredictor/blob/main/CNN_Model.ipynb
 
 
 
