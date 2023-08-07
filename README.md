@@ -110,6 +110,15 @@ even the smallest amount of tinkering can make a big difference in your model. M
 see "clean" data in order to fully understand it; a simple IoU crop was able to boost this score
 considerably. 
 
+## Conlusion
+All of the parts needed to detect a face and predict its age group are in place. We were able to 
+parse through a public dataset contain several thousands of images, filtering them and only keeping
+images that are useful. A little thinking outside the box allowed us to to improve face-detection by
+using the IoU concept. Increasing the accuracy rate of a model is high dependednt on the data it reads
+and the attributes used to process that data. In this project, we were able to learn about key machine
+learning concepts and how to build a practial application that can be used as a prototype for retail
+environments and those that serve similar purposes.
+
 
 
 
