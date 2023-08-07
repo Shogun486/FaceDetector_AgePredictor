@@ -58,13 +58,13 @@ to optimize its usage. Rather, experimentation with these attributes is the
 key to attaining great results. 
 
 
-## Age Prediction (see AgePrediction.ipynb)
+## Age Prediction (see [AgePrediction.ipynb])
 
 ### How Classifiers Work
 Now that the dataset has been filtered, the next step is to predict age groups.
 Almost all image processing, especially when dealing with machine learning, 
 makes use of classifying/labeling the dataset. Once the dataset has been labeled,
-it can be trained to predict. The training model used in AgePrediction.ipynb is a
+it can be trained to predict. The training model used in [AgePrediction.ipynb] is a
 logistic regression classifier, which is a supervised meachine learning approach.
 What this means is that the data can clearly be categorized. In our case, the
 data can be separated into 5 age groups: [0 - 20), [20 - 40), [40 - 60), [60 - 80), 
@@ -121,6 +121,7 @@ environments and those that serve similar purposes.
 
 
 [IoU_Crop.ipynb]: https://github.com/Shogun486/FaceDetecor_AgePredictor/blob/main/IoU_Crop.ipynb
+[AgePrediction.ipynb]: https://github.com/Shogun486/FaceDetecor_AgePredictor/blob/main/AgePrediction.ipynb
 
 
 
