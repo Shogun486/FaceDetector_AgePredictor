@@ -60,6 +60,7 @@ key to attain great results.
 
 ## Age Prediction
 
+### How Classifiers Work
 Now that the dataset has been filtered, the next step is to predict age groups.
 Almost all image processing, especially when dealing with machine learning, 
 makes use of classifying/labeling the dataset. Once the dataset has been labeled,
@@ -69,11 +70,23 @@ What this means is that the data can clearly be categorized. In this case, the
 data can be separated into 5 age groups: [0 - 20), [20 - 40), [40 - 60), [60 - 80), 
 and [80 - 100].
 
+### SIFT
+Next, there has to be a way for the model to recognize images and categorize
+them. This is where feature-extraction methods like SIFT come in. SIFT basically 
+gathers key features from each image and keeps track of their true labels. 
+Different people with the same age group tend to have similar features, so SIFT
+is a good place to start. SIFT maps keypoints on every image, along with descriptors
+which spatially describe each keypoint. Many image processing systems utilize a
+2048-dimensional linear feature vector, so that's a good place to start. Each 
+descriptor in SIFT is a 128-bit vector, so 16 of them will equal 2048. SIFT may not 
+be able to detect enough keypoints on each image such that the 2048 amount is reached, 
+thus there needs to be some manual padding (which can be seen in the code).
+
+### Best Practice
 The IoU-cropped images can indeed be used to train the logistic regression classifier, 
 but it is generally advised to isolate experiments. Therefore, it's best to use 
 the WIKI pre-cropped faces dataset available here. Once the age-prediction model 
-is optimized, it's as simple as feeding the IoU-cropped images into the training 
-and testing set.
+is optimized, it's as simple as feeding the IoU-cropped images into the training set.
 
 
 
