@@ -46,7 +46,7 @@ bypass this is by checking if the HAAR Cascade algorithm intersects with the
 real coordinates' area more than 50%; if so, that data proves more useful for the 
 age-prediction portion of the app.
 
-## IoU Crop - Filtering the dataset
+## IoU Crop - Filtering the dataset (see IoU_Crop.ipynb)
 
 Filtering out data is the first step before processing any of it. The 
 IoU_Crop.ipynb is a multi-threaded program used to iterate over the entire 
@@ -58,7 +58,7 @@ to optimize its usage. Rather, experimentation with these attributes is the
 key to attaining great results. 
 
 
-## Age Prediction
+## Age Prediction (see AgePrediction.ipynb)
 
 ### How Classifiers Work
 Now that the dataset has been filtered, the next step is to predict age groups.
@@ -90,7 +90,7 @@ is optimized, it's as simple as feeding the IoU-cropped images into the training
 
 ## Improving The Model & Comparing Results
 
-### Comparing to a Pre-Trained Model
+### Comparing to a Pre-Trained Model (see Wiki_PreTrainedModel.ipynb)
 The creators of the dataset also have a pretrained model. Upon comparing their model with
 mine on a particular range of images, both reached an accuracy rate of approximately 70%. 
 However, this doesn't mean both models are equally accurate. Theirs is a CNN model, whereas
@@ -98,7 +98,7 @@ mine's is a logistic regression classifier. CNN models are known for better imag
 and indeed their accuracy rate is better on other sets of images. However, this means we
 are on the right track to predicting the correct age group. 
 
-### Creating a CNN Model
+### Creating a CNN Model (see CNN_Model.ipynb)
 Since the creators of the dataset had a CNN model, I thought I should create my own and compare
 results. Again, I trained the images on the pre-cropped dataset they have to see the results
 purely. There are many factors that go into training a CNN model to reach its peak accuracy.
