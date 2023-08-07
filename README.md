@@ -88,6 +88,27 @@ but it is generally advised to isolate experiments. Therefore, it's best to use
 the WIKI pre-cropped faces dataset available here. Once the age-prediction model 
 is optimized, it's as simple as feeding the IoU-cropped images into the training set.
 
+## Improving The Model & Comparing Results
+
+### Comparing to a Pre-Trained Model
+The creators of the dataset also have a pretrained model. Upon comparing their model with
+mine on a particular range of images, both reached an accuracy rate of approximately 70%. 
+However, this doesn't mean both models are equally accurate. Theirs is a CNN model, whereas
+mine's is a logistic regression classifier. CNN models are known for better image processing, 
+and indeed their accuracy rate is better on other sets of images. However, this means we
+are on the right track to predicting the correct age group. 
+
+### Creating a CNN Model
+Since the creators of the dataset had a CNN model, I thought I should create my own and compare
+results. Again, I trained the images on the pre-cropped dataset they have to see the results
+purely. There are many factors that go into training a CNN model to reach its peak accuracy.
+Different image sizes, kernel sizes, etc. play a role into how the model is trained. My CNN model
+was able to reach a 60% accuracy rate on a particular set of images. The accuracy rate isn't high 
+because many of the pre-cropped images also need just as much filtering as we've done before. But
+upon just supplying the IoU-cropped images, the accuracy rate went up to 70%. This just shows that 
+even the smallest amount of tinkering can make a big difference in your model. Models need to
+see "clean" data in order to fully understand it; a simple IoU crop was able to boost this score
+considerably. 
 
 
 
