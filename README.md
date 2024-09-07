@@ -65,7 +65,7 @@ Now that the dataset has been filtered, the next step is to predict age groups.
 Almost all image processing, especially when dealing with machine learning, 
 makes use of classifying/labeling the dataset. Once the dataset has been labeled,
 it can be trained to predict. The training model used in [AgePrediction.ipynb] is a
-logistic regression classifier, which is a supervised meachine learning approach.
+logistic regression classifier, which is a supervised machine learning approach.
 What this means is that the data can clearly be categorized. In our case, the
 data can be separated into 5 age groups: [0 - 20), [20 - 40), [40 - 60), [60 - 80), 
 and [80 - 100].
